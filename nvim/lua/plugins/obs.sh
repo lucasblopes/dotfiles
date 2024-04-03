@@ -1,1 +1,0 @@
-sudo pacman -S curl ffmpeg gtk-update-icon-cache pipewire-jack jack2 jansson libdatachannel libxcomposite libxinerama libxkbcommon-x11 mbedtls pciutils pipewire qt6-svg rnnoise libfdk-aac codec support libva-intel-driver libva-mesa-driver libfdk-aac luajit sndio swig x264
