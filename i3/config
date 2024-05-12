@@ -5,10 +5,10 @@ exec --no-startup-id clipmenud
 exec --no-startup-id numlockx
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id ~/scripts/launch_polybar.sh
-exec --no-startup-id ~/scripts/mouse_dpi.sh
 #exec --no-startup-id feh --bg-scale ~/wallpapers/"$(ls ~/wallpapers/ | shuf -n 1)"
 exec --no-startup-id nitrogen --set-auto --random ~/wallpapers/
 exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
+exec --no-startup-id xmodmap ~/.Xmodmap
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -75,12 +75,13 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 
-bindsym $mod+Return exec alacritty --config-file ~/.config/alacritty/alacritty.yml 
+bindsym $mod+Return exec alacritty --config-file ~/.config/alacritty/alacritty.toml 
 bindsym $mod+q exec --no-startup-id rofi -show drun -drun-display-format "{name}" -config ~/.config/rofi/menu.rasi
 bindsym $mod+p exec --no-startup-id clipmenu -p "clipmenu " -config ~/.config/rofi/menu.rasi
 bindsym $mod+Shift+t exec --no-startup-id rofi -modi emoji -show emoji -kb-custom-1 Ctrl+c -config ~/.config/rofi/menu.rasi -show-icons
 bindsym $mod+Shift+w exec --no-startup-id ~/scripts/wallpaper.sh
-bindsym $mod+Shift+s exec --no-startup-id ~/scripts/search-select-pdf.sh
+#bindsym $mod+Shift+s exec --no-startup-id ~/scripts/search-select-pdf.sh
+bindsym $mod+Shift+s exec --no-startup-id ~/scripts/PDF-Search/pdf-search.sh
 bindsym $mod+b exec --no-startup-id firefox
 bindsym Print exec flameshot gui
 
