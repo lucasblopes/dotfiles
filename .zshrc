@@ -9,6 +9,8 @@ fi
 
 ## ALIASES ##
 
+alias p='python3'
+alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf-tmux -p)' 
 alias sb='source ~/.zshrc'
 alias grep='grep --color=auto'
 alias vina++='/home/lucas/code/vina++/vina++'
@@ -58,3 +60,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
