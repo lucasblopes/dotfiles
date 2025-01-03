@@ -10,12 +10,10 @@ return {
             filesystem = {
                 filtered_items = {
                     hide_dotfiles = false,
-                    hide_gitignored = true,
+                    hide_gitignored = false,
                     hide_by_name = {
-                        ".git",
                         ".DS_Store",
                         "thumbs.db",
-                        "node_modules",
                     },
                 },
                 follow_current_file = {

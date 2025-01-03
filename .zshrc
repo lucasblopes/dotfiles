@@ -7,6 +7,18 @@ fi
 
 # Created by newuser for 5.9
 
+# Function to clear the screen with Ctrl + Space
+function clear-screen-and-scrollback() {
+  builtin echoti civis >"$TTY"
+  builtin print -rn -- $'\e[H\e[2J' >"$TTY"
+  builtin zle .reset-prompt
+  builtin zle -R
+  builtin print -rn -- $'\e[3J' >"$TTY"
+  builtin echoti cnorm >"$TTY"
+}
+zle -N clear-screen-and-scrollback
+bindkey '^ ' clear-screen-and-scrollback
+
 ## ALIASES ##
 
 alias p='python3'
