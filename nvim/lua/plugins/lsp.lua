@@ -4,6 +4,9 @@ return {
         "williamboman/mason.nvim",
         opts = function(_, opts)
             vim.list_extend(opts.ensure_installed, {
+                "clangd",
+                "gopls",
+                "pyright",
                 "luacheck",
                 "shellcheck",
                 "shfmt",

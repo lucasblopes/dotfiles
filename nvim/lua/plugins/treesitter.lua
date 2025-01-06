@@ -1,24 +1,28 @@
 return {
     {
         "nvim-treesitter/nvim-treesitter",
-        tag = "v0.9.1",
         opts = {
             ensure_installed = {
                 "bash",
+                "powershell",
                 "python",
                 "go",
                 "c",
                 "yaml",
+                "json",
                 "javascript",
-                "docker",
                 "typescript",
                 "html",
                 "css",
                 "gitignore",
-                "json",
                 "sql",
                 "vim",
                 "lua",
+                "markdown",
+                "markdown_inline",
+                "latex",
+                "html",
+                "css",
             },
             query_linter = {
                 enable = true,
