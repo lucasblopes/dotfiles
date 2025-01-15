@@ -38,31 +38,26 @@ alias p='python3'
 alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf-tmux -p)' 
 alias sb='source ~/.zshrc'
 alias grep='grep --color=auto'
-alias vina++='/home/lucas/code/vina++/vina++'
-alias temp='~/scripts/weather.sh'
-alias wallpaper='/home/lucas/scripts/wallpaper.sh'
 alias ufpr='ssh lgbl22@macalan.c3sl.ufpr.br'
-alias bluetooth='~/scripts/bluetooth.sh'
-alias mic='pavucontrol'
 alias ipconfig='ip addr show | grep "inet "'
-alias tutor-git='~/scripts/tutor-git.sh'
-alias v=~/.config/compilados/nvim/nvim.appimage
+alias v=~/.binaries/nvim/nvim.appimage
 alias ls="eza"
 alias l=ls
 alias cat="bat --style=auto"
-alias notes='v ~/docs/important-stuff.txt'
 alias cpwd='pwd | xargs echo -n | xclip -sel clip'
 alias pc='ssh $arch -p 3007'
-alias tutor-git='~/scripts/tutor-git.sh'
 alias cp-http='cat ~/.ssh/http | xclip -selection clipboard'
 alias nms75='ssh nms@10.55.47.75'
 alias nms100='ssh nms@10.55.47.100'
 alias nms101='ssh nms@10.55.47.101'
 alias ccg='ssh ccguardian@brcwbvr38'
-alias todo='v ~/docs/todo.md'
+alias lg='lazygit'
 
-export EDITOR='~/.config/compilados/nvim/nvim.appimage'
-export VISUAL='~/.config/compilados/nvim/nvim.appimage'
+alias todo='v ~/notes/zettelkasten/resources/Landis+Gyr/S3G/CC-Guardian/todo.md'
+alias notes='v ~/notes/zettelkasten/resources/Landis+Gyr/S3G/CC-Guardian/important-stuff.md'
+
+export EDITOR='~/.binaries/nvim/nvim.appimage'
+export VISUAL='~/.binaries/nvim/nvim.appimage'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
