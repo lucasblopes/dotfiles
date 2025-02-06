@@ -39,6 +39,7 @@ alias v=nvim
 alias ls="exa"
 alias l=ls
 alias cat="bat --style=auto"
+alias lg=lazygit
 
 MACALAN='lgbl22@macalan.c3sl.ufpr.br'
 
@@ -74,3 +75,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
