@@ -5,7 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Created by newuser for 5.9
+# zsh autocomplete
+autoload -Uz compinit
+compinit
 
 # Function to clear the screen with Ctrl + Space
 function clear-screen-and-scrollback() {
@@ -40,6 +42,7 @@ alias ls="exa"
 alias l=ls
 alias cat="bat --style=auto"
 alias lg=lazygit
+alias lab="cd /home/lucas/code/homelab"
 
 MACALAN='lgbl22@macalan.c3sl.ufpr.br'
 
@@ -78,3 +81,17 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+## Rancher Desktop and Kubectl
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/lucas/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+## Activate kubectl autocomplete
+source ~/.kube/kubectl_completion.zsh
+
+# Kubectl alias
+alias k=kubectl
+compdef k=kubectl
+export KUBE_EDITOR=nvim
