@@ -42,7 +42,8 @@ alias ls="exa"
 alias l=ls
 alias cat="bat --style=auto"
 alias lg=lazygit
-alias lab="cd /home/lucas/code/homelab"
+alias lab="cd ~/code/homelab"
+alias genpass="openssl rand -base64 64"
 
 MACALAN='lgbl22@macalan.c3sl.ufpr.br'
 
